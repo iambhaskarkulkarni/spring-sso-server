@@ -1,0 +1,15 @@
+auth:
+  providers:
+    custom:
+      type: oauth
+      name: "Spring Boot"
+      clientId: "public-client"
+      # clientSecret: "toolpad-secret"
+      issuer: "http://localhost:8080" # Your Spring Boot auth server URL
+      authorizationUrl: "http://localhost:8080/oauth2/authorize"
+      tokenUrl: "http://localhost:8080/oauth2/token"
+      userInfoUrl: "http://localhost:8080/userinfo"
+      scope: "openid email"
+      authorization:
+        params:
+          prompt: "consent"

@@ -30,7 +30,7 @@ const GenericModal: React.FC<GenericModalProps> = ({
   title,
   content,
   actions,
-  width = 500, // Default width
+  width = '50%', // Default width
   loading = false, // Default loading state
   sx, // Custom styles
 }) => {
@@ -38,7 +38,7 @@ const GenericModal: React.FC<GenericModalProps> = ({
     <Dialog
       open={open}
       onClose={onClose}
-      maxWidth="sm" // Set the maximum width of the modal
+      maxWidth="lg" // Set the maximum width of the modal
       fullWidth // Make the modal take up the full width
       slotProps={{
         paper: {
